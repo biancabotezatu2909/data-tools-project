@@ -1,4 +1,4 @@
-\# Changelog
+# Changelog
 
 
 
@@ -6,27 +6,27 @@ All notable changes to this project will be documented in this file.
 
 
 
-\## \[Unreleased]
+## [Unreleased]
 
 
 
-\### Added
+### Added
 
-\- Initial project structure
+- Initial project structure
 
-\- README with project overview
+- README with project overview
 
-\- Git repository initialization
-
-
-
-\## \[0.1.0] - 2026-01-11
+- Git repository initialization
 
 
 
-\### Added
+## [0.1.0] - 2026-01-11
 
-\- Created folder structure for data pipeline
 
-\- Added .gitignore for Python/R projects
+
+### Added
+
+- Created folder structure for data pipeline
+
+- Added .gitignore for Python/R projects
 
