@@ -1,0 +1,44 @@
+dataset_name: "Hospital Records 2022-2023"
+description: "Internal hospital records including medication administration and billing transactions"
+
+source:
+  provider: "Course Instructor"
+  original_system: "Multiple (SYSTEM_A, manual_entry, import_batch)"
+  collection_method: "Automated extraction and manual entry"
+
+temporal_coverage:
+  start_date: "2022-01-01"
+  end_date: "2023-12-31"
+  frequency: "Transaction-level (as-occurred)"
+
+files:
+  - filename: "records_2022.csv"
+    records: "1429"
+    size_bytes: "[To be filled]"
+    format: "CSV (tab-separated)"
+    
+  - filename: "records_2023.csv"
+    records: "1225"
+    size_bytes: "[To be filled]"
+    format: "CSV (tab-separated)"
+
+schema_version: "1.0"
+
+usage_constraints:
+  license: "Internal Use Only"
+  privacy_level: "Confidential - Contains medical and financial data"
+  restrictions: 
+    - "Do not share outside organization"
+    - "Do not upload to public repositories"
+    - "Local storage only"
+    - "Aggregate reporting only (no individual records)"
+
+known_issues:
+  - "Date format inconsistency across records"
+  - "Case sensitivity issues in source_system and status fields"
+  - "Mixed currency units (SEK, EUR) without conversion rates"
+
+quality_flags:
+  completeness: "High - No missing values observed"
+  consistency: "Medium - Format and case inconsistencies present"
+  accuracy: "Unknown - Validation against source systems needed"
