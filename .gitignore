@@ -27,7 +27,7 @@ Thumbs.db
 # Reports (generated files)
 reports/*.pdf
 reports/*.html
-reports/*.md
+reports/summary_report.md*
 !reports/.gitkeep
 
 # IDE

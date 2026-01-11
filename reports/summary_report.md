@@ -1,7 +1,7 @@
 # Hospital Records Data Pipeline
 ## Summary Report
 
-**Generated:** 2026-01-11 21:33:46
+**Generated:** 2026-01-11 21:40:35
 
 ---
 
@@ -10,45 +10,47 @@
 | Metric | Value |
 |--------|-------|
 | Total Records | 1,200 |
-| Total Columns | 9 |
+| Total Columns | 10 |
 | Date Range | 2022-01-01 00:00:00 to 2022-12-31 00:00:00 |
 
 **Missing Values:**
 
 | Column | Missing Count | Percentage |
 |--------|---------------|------------|
-| value | 57 | 4.8% |
-| source_system | 61 | 5.1% |
+| source | 61 | 5.1% |
+| source_system | 1200 | 100.0% |
 | status | 69 | 5.8% |
+| department | 1200 | 100.0% |
+| priority | 1200 | 100.0% |
 
 **Category Distribution:**
 
 | Category | Count | Percentage |
 |----------|-------|------------|
-| billing | 170 | 14.2% |
-| follow_up | 169 | 14.1% |
-| discharge | 163 | 13.6% |
-| admission | 154 | 12.8% |
-| lab_test | 149 | 12.4% |
-| imaging | 142 | 11.8% |
-| transfer | 137 | 11.4% |
-| medication | 116 | 9.7% |
-
-**Department Distribution:**
-
-| Department | Count |
-|------------|-------|
-| NONE | 1,200 |
+| Billing | 170 | 14.2% |
+| Follow-up | 169 | 14.1% |
+| Discharge | 163 | 13.6% |
+| Admission | 154 | 12.8% |
+| Lab Test | 149 | 12.4% |
+| Imaging | 142 | 11.8% |
+| Transfer | 137 | 11.4% |
+| Medication | 116 | 9.7% |
 
 **Status Distribution:**
 
 | Status | Count |
 |--------|-------|
-| ok | 282 |
-| pending | 227 |
-| rejected | 218 |
-| review | 211 |
-| cancelled | 193 |
+| ok | 223 |
+| pending | 209 |
+| rejected | 204 |
+| review | 198 |
+| cancelled | 184 |
+| OK | 45 |
+| Pending | 18 |
+| Rejected | 14 |
+| Ok | 14 |
+| Review | 13 |
+| Cancelled | 9 |
 
 ---
 
@@ -57,14 +59,14 @@
 | Metric | Value |
 |--------|-------|
 | Total Records | 1,400 |
-| Total Columns | 9 |
+| Total Columns | 10 |
 | Date Range | 2023-01-01 00:00:00 to 2023-12-31 00:00:00 |
 
 **Missing Values:**
 
 | Column | Missing Count | Percentage |
 |--------|---------------|------------|
-| value | 82 | 5.9% |
+| source | 1400 | 100.0% |
 | source_system | 73 | 5.2% |
 | status | 78 | 5.6% |
 | priority | 53 | 3.8% |
@@ -73,14 +75,14 @@
 
 | Category | Count | Percentage |
 |----------|-------|------------|
-| admission | 201 | 14.4% |
-| billing | 190 | 13.6% |
-| imaging | 176 | 12.6% |
-| follow_up | 175 | 12.5% |
-| lab_test | 173 | 12.4% |
-| transfer | 170 | 12.1% |
-| medication | 164 | 11.7% |
-| discharge | 151 | 10.8% |
+| Admission | 201 | 14.4% |
+| Billing | 190 | 13.6% |
+| Imaging | 176 | 12.6% |
+| Follow-up | 175 | 12.5% |
+| Lab Test | 173 | 12.4% |
+| Transfer | 170 | 12.1% |
+| Medication | 164 | 11.7% |
+| Discharge | 151 | 10.8% |
 
 **Department Distribution:**
 
@@ -98,11 +100,17 @@
 
 | Status | Count |
 |--------|-------|
-| ok | 284 |
-| rejected | 275 |
-| review | 264 |
-| pending | 250 |
-| cancelled | 249 |
+| review | 245 |
+| rejected | 244 |
+| pending | 236 |
+| cancelled | 227 |
+| ok | 226 |
+| OK | 40 |
+| Rejected | 31 |
+| Cancelled | 22 |
+| Review | 19 |
+| Ok | 18 |
+| Pending | 14 |
 
 ---
 
@@ -115,11 +123,11 @@
 
 | Category | Total Count | Percentage |
 |----------|-------------|------------|
-| billing | 360 | 13.8% |
-| admission | 355 | 13.7% |
-| follow_up | 344 | 13.2% |
-| lab_test | 322 | 12.4% |
-| imaging | 318 | 12.2% |
-| discharge | 314 | 12.1% |
-| transfer | 307 | 11.8% |
-| medication | 280 | 10.8% |
+| Billing | 360 | 13.8% |
+| Admission | 355 | 13.7% |
+| Follow-up | 344 | 13.2% |
+| Lab Test | 322 | 12.4% |
+| Imaging | 318 | 12.2% |
+| Discharge | 314 | 12.1% |
+| Transfer | 307 | 11.8% |
+| Medication | 280 | 10.8% |

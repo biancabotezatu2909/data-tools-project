@@ -11,8 +11,8 @@ os.makedirs(REPORTS_DIR, exist_ok=True)
 REPORT_FILE = os.path.join(REPORTS_DIR, "summary_report.md")
 
 DATASETS = {
-    "Records 2022": os.path.join(PROCESSED_DATA_DIR, "records_2022_cleaned.csv"),
-    "Records 2023": os.path.join(PROCESSED_DATA_DIR, "records_2023_cleaned.csv"),
+    "Records 2022": os.path.join(PROCESSED_DATA_DIR, "records_2022_clean.csv"),
+    "Records 2023": os.path.join(PROCESSED_DATA_DIR, "records_2023_clean.csv"),
 }
 
 def summarize_dataset(df: pd.DataFrame, dataset_name: str) -> list[str]:
