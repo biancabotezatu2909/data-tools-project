@@ -67,3 +67,40 @@ shasum -a 256 -c docs/checksums.sha256
 - **Data Dictionary:** `docs/data_dictionary.md` - Column definitions and data types
 - **Metadata:** `docs/metadata.yaml` - Dataset provenance and constraints
 - **Integrity Notes:** `docs/integrity_notes.md` - File Integrity Verification
+
+## Reproducible Environment
+
+This project uses Python 3.14 (or later recommended) and the dependencies listed in `requirements.txt`.
+
+### Steps to set up the environment
+
+1. **Create a virtual environment**
+```bash
+python -m venv venv
+```
+
+2. **Activate the environment**
+
+-  Windows
+```bash
+venv\Scripts\activate
+```
+-  Mac/Linux
+```bash
+source venv/bin/activate
+```
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+4. **Verify the environment**
+```bash
+python -c "import pandas as pd; import numpy; import matplotlib"
+```
+If no errors appear, the environment is ready.
+
+5. **Run the project**
+```bash
+python src/process_dataset.py
+python src/generate_report.py
+```
