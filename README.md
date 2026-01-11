@@ -6,6 +6,21 @@
 ## Project Overview
 This project establishes a **reproducible data pipeline** designed for managing and processing **Institutional Records**. The goal is to transform raw institutional data into analysis-ready formats while maintaining a strict audit trail.
 
+## Dataset Description
+
+- **Source:** Course instructor (internal hospital data)
+- **Files:** records_2022.csv, records_2023.csv
+- **Format:** Tab-separated CSV files
+- **Records:** ~[fill in after counting] total records
+- **Categories:** Medication administration, Billing transactions
+- **Departments:** RAD, WARD_B, ICU, ADMIN
+- **Time Coverage:** January 2022 - December 2023
+
+### Known Data Quality Issues
+- Date formats are inconsistent (3 different formats)
+- Case sensitivity issues in source_system and status fields
+- Mixed currency units (SEK, EUR)
+
 ---
 
 ## Project Structure
@@ -24,3 +39,31 @@ data-toolkit-project/
 ├── README.md         # Project overview
 └── CHANGELOG.md      # Version history & updates
 ```
+## Quick Start
+
+(Instructions will be added next when pipeline is built)
+
+## Data Integrity
+
+File checksums are stored in `docs/checksums.sha256`. Verify integrity before analysis:
+
+**Mac/Linux:**
+```bash
+shasum -a 256 -c docs/checksums.sha256
+```
+## Data Privacy & Usage
+
+**IMPORTANT:** This dataset contains sensitive medical and financial information.
+
+**Restrictions:**
+- Internal use only
+- Do not upload to public repositories
+- Do not share outside the organization
+- Local storage only
+- Use aggregate reporting (no individual records in outputs)
+
+## Documentation
+
+- **Data Dictionary:** `docs/data_dictionary.md` - Column definitions and data types
+- **Metadata:** `docs/metadata.yaml` - Dataset provenance and constraints
+- **Integrity Notes:** `docs/integrity_notes.md` - File Integrity Verification
