@@ -1,36 +1,26 @@
-# Data Toolkit Project
+# Data Toolkit Project 
 
-**Author:** Bianca-Ioana Botezatu
+**Author:** Bianca-Ioana Botezatu  
 **Date:** January 2026
-**Version:** 0.1.0
 
 ## Project Overview
+This project establishes a **reproducible data pipeline** designed for managing and processing **Institutional Records**. The goal is to transform raw institutional data into analysis-ready formats while maintaining a strict audit trail.
 
-This project creates a reproducible data pipeline for Institutional Records
+---
 
 ## Project Structure
+The repository is organized to follow data science best practices:
+
+```text
 data-toolkit-project/
 ├── data/
-│   ├── raw/          # Original dataset (never modify)
-│   ├── interim/      # Intermediate processing files
+│   ├── raw/          # Original dataset (read-only)
+│   ├── interim/      # Intermediate processing steps
 │   └── processed/    # Final cleaned datasets
-├── src/              # Data processing scripts
-├── workflows/        # Automation pipeline
-├── reports/          # Generated outputs
-├── docs/             # Documentation
-├── README.md         # This file
-└── CHANGELOG.md      # Version history
-
-## Quick Start
-
-(Instructions will be added as we build the pipeline)
-
-## Data Notes
-
-- Dataset source: [Instructor provided]
-- Restrictions: Local use only, do not distribute
-- Format: [To be filled in]
-
-## Status
-
-Work in progress - Initial setup complete
+├── src/              # Python/R scripts for processing
+├── workflows/        # GitHub Actions or local automation scripts
+├── reports/          # Summaries and data visualizations
+├── docs/             # Technical documentation & data dictionaries
+├── README.md         # Project overview
+└── CHANGELOG.md      # Version history & updates
+```
