@@ -7,7 +7,6 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Data dictionary with all column definitions
 - Metadata file with dataset provenance
-- CLI exploration notes with 7 useful commands
 - File integrity checksums (SHA256)
 - Integrity verification documentation
 - Updated README with dataset description
